@@ -75,7 +75,7 @@ alias ttop="top -R -F -s 10 -o rsize"
 # ------------------------------------------------------------
 my_ps() { ps $@ -u $USER -o pid,%cpu,%mem,start,time,bsdtime,command ; }
 
-alias myip='curl ip.appspot.com'                    # myip:         Public facing IP Address
+alias myip='curl -w "\n" ip.appspot.com'            # myip:         Public facing IP Address
 alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
 alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
 alias lsock='sudo /usr/sbin/lsof -i -P'             # lsock:        Display open sockets
@@ -108,6 +108,6 @@ alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
 alias finderShowHidden='defaults write com.apple.finder ShowAllFiles TRUE'
 alias finderHideHidden='defaults write com.apple.finder ShowAllFiles FALSE'
 
-alias mc='/usr/local/opt/midnight-commander/bin/mc -d'
+alias mc='LANG=en_EN.UTF-8 /usr/local/opt/midnight-commander/bin/mc -d'
 
-export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
