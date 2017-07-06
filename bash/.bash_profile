@@ -14,6 +14,10 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # http://stackoverflow.com/questions/10374019/how-to-get-infinite-command-history-in-bash
 export HISTSIZE="GOTCHA"
 export HISTCONTROL="ignoreboth:erasedups"
+export HISTIGNORE="ls*:rm*:cd*:CD*:ps*:exit*:reset*:clear*:synaptic*:mkdir*:cat*"
+
+# Append to the history instead of overwriting (good for multiple connections)
+shopt -s histappend
 
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
