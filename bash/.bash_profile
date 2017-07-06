@@ -13,6 +13,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 # Infinite history for Bash
 # http://stackoverflow.com/questions/10374019/how-to-get-infinite-command-history-in-bash
 export HISTSIZE="GOTCHA"
+export HISTCONTROL="ignoreboth:erasedups"
 
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
