@@ -114,6 +114,7 @@ alias finderShowHidden='defaults write com.apple.finder ShowAllFiles TRUE'
 alias finderHideHidden='defaults write com.apple.finder ShowAllFiles FALSE'
 
 # -------------------------------------------------------------------
+export LC_ALL=en_US.UTF-8
 export MIBS=ALL
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin"
 alias mc='LANG=en_EN.UTF-8 /usr/local/opt/midnight-commander/bin/mc -d'
